@@ -12,9 +12,9 @@ import org.springframework.web.bind.annotation.RequestBody;
 // import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
+@CrossOrigin(origins = "*")
 @RestController
 @RequestMapping("/api/product")
-@CrossOrigin
 public class AppController {
 	@Autowired
 	Service s;
